@@ -1,0 +1,76 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        
+        <title>titre</title>
+        <link rel="stylesheet" href="css/style.css">
+
+        <style type="text/css">
+        
+h1 {
+    font-family: arial, sans-serif;
+}
+h3 {
+    font-family: arial, sans-serif;
+    color: #BAB9B9;
+}
+
+textarea {
+    width: 600px;
+    padding-left: 10px;
+    padding-top: 5px;
+}
+
+.container {
+    width: 980px;
+    height: 100%;
+}
+
+table, th, td {
+    border: 1px solid green;
+} 
+table {
+    border-collapse: collapse;
+    width: 980px;
+}
+th {
+    height: 15px;
+    font-family: arial, sans-serif;
+    font-size: 1.4em;
+    text-align: left;
+    padding-left: 10px;
+    padding-top: 5px;
+    padding-bottom: 4px;
+    background-color: rgb(167, 201, 66);
+    color: rgb(255, 255, 255);
+    
+} 
+td {
+    font-family: arial, sans-serif;
+    height: 15px;
+    vertical-align: bottom;
+    padding-left: 10px;
+    padding-top: 5px;
+    padding-bottom: 4px;
+}
+
+.date {
+    width: 100px;
+}
+.taches {
+    width: 800px;
+}
+td a {
+    float: right;
+    padding-right: 15px;
+}
+        </style>
+    </head>
+
+    <body>
+        <%=yield %>
+        
+    </body>
+</html>
