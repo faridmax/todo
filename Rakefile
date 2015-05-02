@@ -1,2 +1,2 @@
-require './todo'
 require 'sinatra/activerecord/rake'
+require './todo'

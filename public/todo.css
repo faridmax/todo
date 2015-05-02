@@ -1,0 +1,35 @@
+table, th, td {
+    border: 1px solid green;
+} 
+table {
+    border-collapse: collapse;
+}
+th {
+    height: 15px;
+    font-size: 1.4em;
+    text-align: left;
+    padding-left: 10px;
+    padding-top: 5px;
+    padding-bottom: 4px;
+    background-color: rgb(167, 201, 66);
+    color: rgb(255, 255, 255);
+    
+} 
+td {
+    height: 15px;
+    vertical-align: bottom;
+    padding-left: 10px;
+    padding-top: 5px;
+    padding-bottom: 4px;
+}
+
+.date {
+    width: 100px;
+}
+.taches {
+    width: 90%;
+}
+td a {
+    float: right;
+    padding-right: 15px;
+}

@@ -1,15 +1,11 @@
-<center> 
-<h1> Votre ToDo liste <h1> 
-<h3>pour pas oublier ;-)</h3>
-<br>
-
 <div class="container">
-<form action="/datas" method="post">
-	<textarea type="text" name="todo" placeholder="Tapez ce que vous allez faire ici"></textarea>
-	<input type="date" name="date" autocomplete = "on" min="today" value="today">
-	<input type="submit" value="Prendre Note!">
+<form class="form-inline" action="/datas" method="post">
+	<input class="form-control" style="width: 50%;" type="text" name="todo" placeholder="Tapez ce que vous allez faire ici">
+	<input class="form-control" type="date" name="date" autocomplete = "on" min="today" value="today">
+	<input class="btn btn-success" type="submit" value="Prendre Note!">
 </form>
 <br>
+
 	<table>
 		<tr>
 		<th class="taches">taches</th><th class="date">date</th>
@@ -17,7 +13,7 @@
 			
 		<% @datas.each do |d| %>
 		<tr class="">
-		<td><%= d.todo	%><a href="">[edit]</a><a href="/delete/<%= d[:id] %>">[X]</a></td>
+		<td><%= d.todo	%><a href="/edit/<%= d[:id] %>">Modifier</a><a href="/delete/<%= d[:id] %>">Supprimer</a></td>
 		<td><%= d.date	%></td> 
 		</tr>
 		<% end %>
